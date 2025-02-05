@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #ff66b2;
+            color: white;
+        }
+        .no {
+            background-color: #999;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine? 💖</h1>
+        <img src="your-image-url-here" alt="Cute Image">
+        <div class="buttons">
+            <button class="yes" onclick="sayYes()">Yes</button>
+            <button class="no" id="noButton" onmouseover="moveNo()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function sayYes() {
+            alert("Yay! I knew you’d say yes! ❤️");
+        }
+
+        function moveNo() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            document.getElementById('noButton').style.left = x + 'px';
+            document.getElementById('noButton').style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
