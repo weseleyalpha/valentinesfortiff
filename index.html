@@ -42,8 +42,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Will you be my Valentine? 💖</h1>
-        <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/52480832_10157556325739523_6511563371588878336_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4PFVYVNrFqQQ7kNvgF3-PjX&_nc_zt=23&_nc_ht=scontent-dfw5-2.xx&_nc_gid=ARMALzs92XoIlMZ6OGrRFNK&oh=00_AYA6mAHV_RXXLYu77IcThPi97H7Cevngrq2Rr1zn2LFW8g&oe=67CB47FA" alt="Cute Image">
+        <h1 id="question">Will you be my Valentine? 💖</h1>
+        <img id="valentineImage" src="https://i.etsystatic.com/25203711/r/il/6aaf4f/2845605786/il_570xN.2845605786_7kcn.jpg" alt="Cute Image">
         <div class="buttons">
             <button class="yes" onclick="sayYes()">Yes</button>
             <button class="no" id="noButton" onmouseover="moveNo()">No</button>
@@ -52,7 +52,8 @@
 
     <script>
         function sayYes() {
-            alert("Yay! We get to eat crawfish! ❤️");
+            document.getElementById("question").innerText = "Yay! I can't wait to eat crawfish and smoke weed with you! ❤️";
+            document.getElementById("valentineImage").src = "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/52480832_10157556325739523_6511563371588878336_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4PFVYVNrFqQQ7kNvgF3-PjX&_nc_zt=23&_nc_ht=scontent-dfw5-2.xx&_nc_gid=ARMALzs92XoIlMZ6OGrRFNK&oh=00_AYA6mAHV_RXXLYu77IcThPi97H7Cevngrq2Rr1zn2LFW8g&oe=67CB47FA";
         }
 
         function moveNo() {
